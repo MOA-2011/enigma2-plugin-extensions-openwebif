@@ -123,6 +123,10 @@ class AjaxController(BaseController):
 					model = "wo_force1plus"
 				elif model == "force1":
 					model = "wo_force1"
+				elif model == "force2solid":
+					model = "wo_force1"
+				elif model == "force2":
+					model = "wo_force1"
 				else:
 					model = info["model"]
 			elif ret_brand == "swiss":
