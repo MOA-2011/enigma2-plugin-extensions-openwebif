@@ -196,7 +196,7 @@ class BaseController(resource.Resource):
 			else:
 				ret["remote"] = "ed_type1"
 		elif ret_brand == "worldvision":
-			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus", "force1"):
+			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus", "force1", "force2", "force2solid", "tmnanose" ):
 				ret["remote"] = "wo_type0"
 		elif ret_brand == "iqon":
 			ret["remote"] = "iqon" 
