@@ -124,7 +124,7 @@ class AjaxController(BaseController):
 				elif model == "force1":
 					model = "wo_force1"
 				elif model == "force2solid":
-					model = "wo_force1"
+					model = "wo_force2solid"
 				elif model == "force2":
 					model = "wo_force1"
 				else:
