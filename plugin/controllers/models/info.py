@@ -189,6 +189,9 @@ def getInfo():
 					model = "Force1+"
 					brand = "Iqon"
 				b.close()
+		elif f_model.startswith("force2"):
+			model = "force2"
+			brand = "Iqon"
 		else:
 			model = f_model
 			if fileExists("/etc/.brandtype"):

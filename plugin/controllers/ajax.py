@@ -97,7 +97,7 @@ class AjaxController(BaseController):
 			model = model.replace("vu", "")
 		if fileExists("/etc/.brandtype"):
 			ret_brand = open("/etc/.brandtype").read().strip().lower()
-			print "@@@@@ [model] @@@@@", model
+#			print "@@@@@ [model] @@@@@", model
 			if ret_brand == "technomate":
 				if model == "TM-NANO-3T COMBO":
 					model = "te_force1plus"
@@ -144,7 +144,7 @@ class AjaxController(BaseController):
 				elif model == "force2":
 					model = "iq_force2"
 				elif model == "force2solid":
-					model = "iq_force2solid"
+					model = "iq_force2"
 				else:
 					model = info["model"]
 			else:
