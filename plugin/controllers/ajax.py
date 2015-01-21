@@ -100,7 +100,7 @@ class AjaxController(BaseController):
 #			print "@@@@@ [model] @@@@@", model
 			if ret_brand == "technomate":
 				if model == "TM-NANO-3T COMBO":
-					model = "force1plus"
+					model = "tmnano3tcombo"
 				elif model == "tmnano2super":
 					model = "tmnano2super"
 				else:
