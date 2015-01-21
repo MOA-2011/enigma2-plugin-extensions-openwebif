@@ -183,6 +183,8 @@ class BaseController(resource.Resource):
 					ret["remote"] = "te_type3"
 				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1", "tmnano2super"):
 					ret["remote"] = "te_type2"
+				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnanose"):
+					ret["remote"] = "te_type3"
 				else:
 					ret["remote"] = "te_type0"
 		elif ret_brand == "swiss":
