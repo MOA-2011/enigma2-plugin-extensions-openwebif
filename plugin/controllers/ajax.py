@@ -102,7 +102,7 @@ class AjaxController(BaseController):
 				if model == "TM-NANO-3T COMBO":
 					model = "tmnano3tcombo"
 				elif model == "tmnano2super":
-					model = "tmnano2super"
+					model = "te_tmnano2super"
 				else:
 					model = info["model"]
 			elif ret_brand == "edision":
