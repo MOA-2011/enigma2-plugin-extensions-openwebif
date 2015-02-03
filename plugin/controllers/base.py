@@ -181,9 +181,11 @@ class BaseController(resource.Resource):
 			else:
 				if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus"):
 					ret["remote"] = "te_type3"
-				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1", "tmnano2super"):
+				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1"):
 					ret["remote"] = "te_type2"
-				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnanose"):
+				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnano2super"):
+					ret["remote"] = "te_type3"
+				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnanose"): # change tmnanose model rcp
 					ret["remote"] = "te_type3"
 				else:
 					ret["remote"] = "te_type0"
