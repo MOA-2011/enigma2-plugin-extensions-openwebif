@@ -179,7 +179,7 @@ class BaseController(resource.Resource):
 			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnanooe","tmsingle"):
 				ret["remote"] = "te_type1"
 			else:
-				if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus"):
+				if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus", "force2plus"):
 					ret["remote"] = "te_type3"
 				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1"):
 					ret["remote"] = "te_type2"
