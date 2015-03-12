@@ -145,6 +145,8 @@ class AjaxController(BaseController):
 					model = "iq_force2"
 				elif model == "force2solid":
 					model = "iq_force2"
+				elif model == "force2plus":
+					model = "iq_force2plus"
 				else:
 					model = info["model"]
 			else:

@@ -185,7 +185,7 @@ class BaseController(resource.Resource):
 					ret["remote"] = "te_type2"
 				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnano2super"): # change rcu 
 					ret["remote"] = "te_type2"
-				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnanose"): # change tmnanose model rcp
+				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnanose","tmnanocombo"): # change tmnanose model rcp
 					ret["remote"] = "te_type3"
 				else:
 					ret["remote"] = "te_type0"
@@ -200,7 +200,7 @@ class BaseController(resource.Resource):
 			else:
 				ret["remote"] = "ed_type1"
 		elif ret_brand == "worldvision":
-			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus", "force1", "force2", "force2solid", "tmnanose" ):
+			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus", "force1", "force2", "force2solid" ):
 				ret["remote"] = "wo_type0"
 		elif ret_brand == "iqon":
 			ret["remote"] = "iqon" 
