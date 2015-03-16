@@ -103,6 +103,12 @@ class AjaxController(BaseController):
 					model = "tmnano3tcombo"
 				elif model == "tmnano2super":
 					model = "te_tmnano2super"
+				elif model == "TM-NANO-SE":
+					model = "tmnanose"
+				elif model == "TM-NANO-COMBO":
+					model = "tmnanocombo"
+				elif model == "TM-NANO-ECO":
+					model = "tmnanoeco"
 				else:
 					model = info["model"]
 			elif ret_brand == "edision":
@@ -116,6 +122,8 @@ class AjaxController(BaseController):
 					model = "ed_op2plus"
 				elif model.endswith("OS3+"):
 					model = "ed_force1plus"
+				elif model.endswith("OS"):
+					model = "optimussos"
 				else:
 					model = info["model"]
 			elif ret_brand == "worldvision":

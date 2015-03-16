@@ -189,12 +189,24 @@ def getInfo():
 					model = "Force1+"
 					brand = "Iqon"
 				b.close()
+		elif f_model.startswith("optimussos"):
+			model = "Optimuss OS"
+			brand = "Edision"
 		elif f_model.startswith("force2plus"):
 			model = "force2plus"
 			brand = "Iqon"
 		elif f_model.startswith("force2"):
 			model = "force2"
 			brand = "Iqon"
+		elif f_model.startswith("tmnanose"):
+			model = "TM-NANO-SE"
+			brand = "Technomate"
+		elif f_model.startswith("tmnanocombo"):
+			model = "TM-NANO-COMBO"
+			brand = "Technomate"
+		elif f_model.startswith("tmnanoeco"):
+			model = "TM-NANO-ECO"
+			brand = "Technomate"
 		else:
 			model = f_model
 			if fileExists("/etc/.brandtype"):

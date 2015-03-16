@@ -185,8 +185,10 @@ class BaseController(resource.Resource):
 					ret["remote"] = "te_type2"
 				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnano2super"): # change rcu 
 					ret["remote"] = "te_type2"
-				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnanose","tmnanocombo"): # change tmnanose model rcp
+				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnanose","tmnanocombo"): # change tmnanose model rcu
 					ret["remote"] = "te_type3"
+				elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("tmnanoeco"): # tmnanoeco model rcu
+					ret["remote"] = "te_type4"
 				else:
 					ret["remote"] = "te_type0"
 		elif ret_brand == "swiss":
@@ -195,7 +197,7 @@ class BaseController(resource.Resource):
 		elif ret_brand == "edision":
 			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus"):
 				ret["remote"] = "ed_type0"
-			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("optimussos1plus", "optimussos2plus"):
+			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("optimussos1plus", "optimussos2plus", "optimussos"):
 				ret["remote"] = "ed_type1"
 			else:
 				ret["remote"] = "ed_type1"
