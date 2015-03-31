@@ -105,8 +105,8 @@ class AjaxController(BaseController):
 					model = "te_tmnano2super"
 				elif model == "TM-NANO-SE":
 					model = "tmnanose"
-				elif model == "TM-NANO-COMBO":
-					model = "tmnanocombo"
+				elif model == "TM-NANO-SE Combo":
+					model = "tmnanosecombo"
 				elif model == "TM-NANO-ECO":
 					model = "tmnanoeco"
 				else:
