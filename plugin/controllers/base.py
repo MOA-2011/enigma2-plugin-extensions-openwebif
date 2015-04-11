@@ -205,7 +205,10 @@ class BaseController(resource.Resource):
 			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus", "force1", "force2", "force2solid" ):
 				ret["remote"] = "wo_type0"
 		elif ret_brand == "iqon":
-			ret["remote"] = "iqon" 
+			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus", "force1"):
+				ret["remote"] = "wo_type0"
+			else:
+				ret["remote"] = "iqon" 
 		elif ret["box"] in ("vusolo", "vuduo", "vuuno", "vusolo2", "vuduo2", "vusolose", "solo", "duo", "uno", "solo2", "duo2", "solose"):
 			ret["remote"] = "vu_normal"
 		elif ret["box"] in ("vuultimo", "ultimo"):
