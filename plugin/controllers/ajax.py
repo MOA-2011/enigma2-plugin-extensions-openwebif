@@ -107,8 +107,8 @@ class AjaxController(BaseController):
 					model = "tmnanose"
 				elif model == "TM-NANO-SE Combo":
 					model = "tmnanosecombo"
-				elif model == "TM-NANO-ECO":
-					model = "tmnanoeco"
+				elif model == "TM-NANO-SE Eco":
+					model = "tmnanoseeco"
 				else:
 					model = info["model"]
 			elif ret_brand == "edision":
@@ -155,6 +155,8 @@ class AjaxController(BaseController):
 					model = "iq_force2"
 				elif model == "force2plus":
 					model = "iq_force2plus"
+				elif model == "force2eco":
+					model = "iq_force2eco"
 				else:
 					model = info["model"]
 			else:

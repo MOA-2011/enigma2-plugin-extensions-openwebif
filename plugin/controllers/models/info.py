@@ -195,17 +195,20 @@ def getInfo():
 		elif f_model.startswith("force2plus"):
 			model = "force2plus"
 			brand = "Iqon"
+		elif f_model.startswith("force2eco"):
+			model = "force2eco"
+			brand = "Iqon"
 		elif f_model.startswith("force2"):
 			model = "force2"
 			brand = "Iqon"
 		elif f_model.startswith("tmnanosecombo"):
 			model = "TM-NANO-SE Combo"
 			brand = "Technomate"
+		elif f_model.startswith("tmnanoseeco"):
+			model = "TM-NANO-SE Eco"
+			brand = "Technomate"
 		elif f_model.startswith("tmnanose"):
 			model = "TM-NANO-SE"
-			brand = "Technomate"
-		elif f_model.startswith("tmnanoeco"):
-			model = "TM-NANO-ECO"
 			brand = "Technomate"
 		else:
 			model = f_model
