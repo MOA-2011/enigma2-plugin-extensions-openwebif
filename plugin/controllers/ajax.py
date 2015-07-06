@@ -144,6 +144,11 @@ class AjaxController(BaseController):
 					model = "sw_force1"
 				else:
 					model = info["model"]
+			elif ret_brand == "xsarius":
+				if model == "FUSION HD":
+					model = "fusionhd"
+				else:
+					model = info["model"]
 			elif ret_brand  == "iqon":
 				if model == "Force1+":
 					model = "iq_force1plus"

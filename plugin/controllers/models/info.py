@@ -210,6 +210,9 @@ def getInfo():
 		elif f_model.startswith("tmnanose"):
 			model = "TM-NANO-SE"
 			brand = "Technomate"
+		elif f_model.startswith("fusionhd"):
+			model = "FUSION HD"
+			brand = "Xsarius"
 		else:
 			model = f_model
 			if fileExists("/etc/.brandtype"):
