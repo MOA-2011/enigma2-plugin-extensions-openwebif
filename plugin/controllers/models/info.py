@@ -195,8 +195,8 @@ def getInfo():
 		elif f_model.startswith("force2plus"):
 			model = "force2plus"
 			brand = "Iqon"
-		elif f_model.startswith("force2eco"):
-			model = "force2eco"
+		elif f_model.startswith("force2se"):
+			model = "force2se"
 			brand = "Iqon"
 		elif f_model.startswith("force2"):
 			model = "force2"
