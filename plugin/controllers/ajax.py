@@ -147,6 +147,8 @@ class AjaxController(BaseController):
 			elif ret_brand == "xsarius":
 				if model == "FUSION HD":
 					model = "fusionhd"
+				elif model == "FUSION HD SE":
+					model = "fusionhdse"
 				else:
 					model = info["model"]
 			elif ret_brand  == "iqon":
