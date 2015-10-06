@@ -213,6 +213,9 @@ def getInfo():
 		elif f_model.startswith("fusionhd"):
 			model = "FUSION HD"
 			brand = "Xsarius"
+		elif f_model.startswith("fusionhdse"):
+			model = "FUSION HD SE"
+			brand = "Xsarius"
 		else:
 			model = f_model
 			if fileExists("/etc/.brandtype"):
