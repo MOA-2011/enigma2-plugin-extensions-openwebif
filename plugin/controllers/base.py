@@ -207,7 +207,7 @@ class BaseController(resource.Resource):
 		elif ret_brand == "xsarius":
 			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("fusionhd" ):
 				ret["remote"] = "fusionhd"
-			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("fusionhd" ):
+			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("fusionhdse" ):
 				ret["remote"] = "fusionhdse"
 			else:
 				ret["remote"] = "iqon" 
