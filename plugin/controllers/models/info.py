@@ -207,6 +207,9 @@ def getInfo():
 		elif f_model.startswith("tmnanosem2"):
 			model = "TM-NANO-SE M2"
 			brand = "Technomate"
+		elif f_model.startswith("tmnanoseplus"):
+			model = "TM-NANO-SE Plus"
+			brand = "Technomate"
 		elif f_model.startswith("tmnanose"):
 			model = "TM-NANO-SE"
 			brand = "Technomate"
