@@ -219,6 +219,20 @@ def getInfo():
 		elif f_model.startswith("fusionhd"):
 			model = "FUSION HD"
 			brand = "Xsarius"
+		elif f_model.startswith("purehd"):
+			model = "PURE HD"
+			if fileExists("/etc/.brandtype"):
+				b = open("/etc/.brandtype",'r')
+				b_brand = b.readline().strip().lower()
+				brand = b_brand[0:1].upper() + b_brand[1:].lower()
+				b.close()
+		elif f_model.startswith("puresatip"):
+			model = "PURE SATIP"
+			if fileExists("/etc/.brandtype"):
+				b = open("/etc/.brandtype",'r')
+				b_brand = b.readline().strip().lower()
+				brand = b_brand[0:1].upper() + b_brand[1:].lower()
+				b.close()
 		else:
 			model = f_model
 			if fileExists("/etc/.brandtype"):

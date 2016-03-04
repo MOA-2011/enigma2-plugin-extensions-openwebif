@@ -209,11 +209,19 @@ class BaseController(resource.Resource):
 				ret["remote"] = "fusionhd"
 			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("fusionhdse" ):
 				ret["remote"] = "fusionhdse"
+			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("purehd" ):
+				ret["remote"] = "purehd"
+			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("puresatip" ):
+				ret["remote"] = "puresatip"
 			else:
 				ret["remote"] = "iqon" 
 		elif ret_brand == "iqon":
 			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus", "force1"):
 				ret["remote"] = "wo_type0"
+			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("purehd" ):
+				ret["remote"] = "purehd"
+			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("puresatip" ):
+				ret["remote"] = "puresatip"
 			else:
 				ret["remote"] = "iqon" 
 		elif ret["box"] in ("vusolo", "vuduo", "vuuno", "vusolo2", "vuduo2", "vusolose", "solo", "duo", "uno", "solo2", "duo2", "solose"):

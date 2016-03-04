@@ -151,6 +151,10 @@ class AjaxController(BaseController):
 					model = "fusionhd"
 				elif model == "FUSION HD SE":
 					model = "fusionhdse"
+				elif model == "PURE HD":
+					model = "purehd"
+				elif model == "PURE SATIP":
+					model = "puresatip"
 				else:
 					model = info["model"]
 			elif ret_brand  == "iqon":
@@ -166,6 +170,10 @@ class AjaxController(BaseController):
 					model = "iq_force2plus"
 				elif model == "force2se":
 					model = "iq_force2se"
+				elif model == "PURE HD":
+					model = "purehd"
+				elif model == "PURE SATIP":
+					model = "puresatip"
 				else:
 					model = info["model"]
 			else:
