@@ -174,6 +174,14 @@ class AjaxController(BaseController):
 					model = "purehd"
 				elif model == "PURE SATIP":
 					model = "puresatip"
+				elif model == "ios100hd":
+					model = "iq_ios100"
+				elif model == "ios200hd":
+					model = "iq_ios200"
+				elif model == "ios300hd":
+					model = "iq_ios300"
+				elif model == "ios300newhd":
+					mdoel = "iq_ios300new"
 				else:
 					model = info["model"]
 			else:
