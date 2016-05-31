@@ -170,6 +170,8 @@ class AjaxController(BaseController):
 					model = "iq_force2plus"
 				elif model == "force2se":
 					model = "iq_force2se"
+				elif model == "force2nano":
+					model = "iq_force2nano"
 				elif model == "PURE HD":
 					model = "purehd"
 				elif model == "PURE SATIP":
