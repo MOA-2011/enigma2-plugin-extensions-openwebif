@@ -153,8 +153,8 @@ class AjaxController(BaseController):
 					model = "fusionhdse"
 				elif model == "PURE HD":
 					model = "purehd"
-				elif model == "PURE SATIP":
-					model = "puresatip"
+				elif model == "SELF SAT":
+					model = "selfsat"
 				else:
 					model = info["model"]
 			elif ret_brand  == "iqon":
@@ -174,8 +174,8 @@ class AjaxController(BaseController):
 					model = "iq_force2nano"
 				elif model == "PURE HD":
 					model = "purehd"
-				elif model == "PURE SATIP":
-					model = "puresatip"
+				elif model == "SELF SAT":
+					model = "selfsat"
 				elif model == "ios100hd":
 					model = "iq_ios100"
 				elif model == "ios200hd":

@@ -211,8 +211,8 @@ class BaseController(resource.Resource):
 				ret["remote"] = "fusionhdse"
 			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("purehd" ):
 				ret["remote"] = "purehd"
-			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("puresatip" ):
-				ret["remote"] = "puresatip"
+			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("selfsat" ):
+				ret["remote"] = "selfsat"
 			else:
 				ret["remote"] = "iqon" 
 		elif ret_brand == "iqon":
@@ -220,8 +220,8 @@ class BaseController(resource.Resource):
 				ret["remote"] = "wo_type0"
 			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("purehd" ):
 				ret["remote"] = "purehd"
-			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("puresatip" ):
-				ret["remote"] = "puresatip"
+			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("selfsat" ):
+				ret["remote"] = "selfsat"
 			else:
 				ret["remote"] = "iqon" 
 		elif ret["box"] in ("vusolo", "vuduo", "vuuno", "vusolo2", "vuduo2", "vusolose", "solo", "duo", "uno", "solo2", "duo2", "solose"):
