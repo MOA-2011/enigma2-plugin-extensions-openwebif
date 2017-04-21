@@ -216,7 +216,12 @@ class BaseController(resource.Resource):
 			elif open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("selfsat" ):
 				ret["remote"] = "selfsat"
 			else:
-				ret["remote"] = "iqon" 
+				ret["remote"] = "iqon"
+		elif ret_brand == "vala":
+			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("valalinux" ):
+				ret["remote"] = "valalinux"
+			else:
+				ret["remote"] = "valaliunx"
 		elif ret_brand == "iqon":
 			if open("/proc/stb/info/hwmodel","r").read().strip().lower() in ("force1plus", "force1"):
 				ret["remote"] = "wo_type0"
